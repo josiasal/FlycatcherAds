@@ -289,4 +289,4 @@ __pycache__/
 *.pyc
 
 # nuget config
-.nuget.config
+nuget.config
