@@ -4,7 +4,6 @@ using Tweetinvi.Models;
 using FlycatcherAds.Models;
 using FlycatcherAds.Parameters;
 
-
 namespace FlycatcherAds.Core.Controllers
 {
     public interface ICampaignsController

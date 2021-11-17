@@ -1,8 +1,9 @@
 using Tweetinvi.Core.Injectinvi;
 
 using FlycatcherAds.Core.Controllers;
-using FlycatcherAds.Controllers.AdsAccount;
 using FlycatcherAds.Core.QueryGenerators;
+using FlycatcherAds.Controllers;
+
 
 namespace FlycatcherAds.Controllers
 {
@@ -21,12 +22,16 @@ namespace FlycatcherAds.Controllers
             container.RegisterType<IAdsAccountsController, AdsAccountsController>();
             container.RegisterType<ICampaignsController, CampaignsController>();
             container.RegisterType<IPromotedTweetsController, PromotedTweetsController>();
+            container.RegisterType<ILineItemsController, LineItemsController>();
             
             // Analytics
-            container.RegisterType<ISynchronousAnalyticsController, SynchronousAnalyticsController>();
+            container.RegisterType<IAnalyticsController, AnalyticsController>();
 
             // Creatives
             container.RegisterType<IMediaLibraryController, MediaLibraryController>();
+
+            // Audiences
+            container.RegisterType<ICustomAudiencesController, CustomAudiencesController>();
         }
 
         private void InitializeQueryExecutors(ITweetinviContainer container)
@@ -35,12 +40,16 @@ namespace FlycatcherAds.Controllers
             container.RegisterType<IAdsAccountsQueryExecutor, AdsAccountsQueryExecutor>();
             container.RegisterType<ICampaignsQueryExecutor, CampaignsQueryExecutor>();
             container.RegisterType<IPromotedTweetsQueryExecutor, PromotedTweetsQueryExecutor>();
+            container.RegisterType<ILineItemsQueryExecutor, LineItemsQueryExecutor>();
 
             // Analytics
-            container.RegisterType<ISynchronousAnalyticsQueryExecutor, SynchronousAnalyticsQueryExecutor>();
+            container.RegisterType<IAnalyticsQueryExecutor, AnalyticsQueryExecutor>();
 
             // Creatives
             container.RegisterType<IMediaLibraryQueryExecutor, MediaLibraryQueryExecutor>();
+
+            // Audiences
+            container.RegisterType<ICustomAudiencesQueryExecutor, CustomAudiencesQueryExecutor>();
 
         }
 
@@ -50,12 +59,16 @@ namespace FlycatcherAds.Controllers
             container.RegisterType<IAdsAccountsQueryGenerator, AdsAccountsQueryGenerator>();
             container.RegisterType<ICampaignsQueryGenerator, CampaignsQueryGenerator>();
             container.RegisterType<IPromotedTweetsQueryGenerator, PromotedTweetsQueryGenerator>();
+            container.RegisterType<ILineItemsQueryGenerator, LineItemsQueryGenerator>();
 
             // Analytics
-            container.RegisterType<ISynchronousAnalyticsQueryGenerator, SynchronousAnalyticsQueryGenerator>();
+            container.RegisterType<IAnalyticsQueryGenerator, AnalyticsQueryGenerator>();
 
             // Creatives
             container.RegisterType<IMediaLibraryQueryGenerator, MediaLibraryQueryGenerator>();
+
+            // Audiences
+            container.RegisterType<ICustomAudiencesQueryGenerator, CustomAudiencesQueryGenerator>();
         }
     }
 }

@@ -58,8 +58,10 @@ namespace FlycatcherAds
             AdsAccountsClient = _tweetinviContainer.Resolve<IAdsAccountsClient>();
             CampaignsClient = _tweetinviContainer.Resolve<ICampaignsClient>();
             PromotedTweetsClient = _tweetinviContainer.Resolve<IPromotedTweetsClient>();
-            SynchronousAnalyticsClient = _tweetinviContainer.Resolve<ISynchronousAnalyticsClient>();
+            LineItemsClient = _tweetinviContainer.Resolve<ILineItemsClient>();
+            AnalyticsClient = _tweetinviContainer.Resolve<IAnalyticsClient>();
             MediaLibraryClient = _tweetinviContainer.Resolve<IMediaLibraryClient>();
+            CustomAudiencesClient = _tweetinviContainer.Resolve<ICustomAudiencesClient>();
         }
 
         private void RegisterCustomModules()
@@ -71,8 +73,10 @@ namespace FlycatcherAds
         public IAdsAccountsClient AdsAccountsClient { get; }
         public ICampaignsClient CampaignsClient { get; }
         public IPromotedTweetsClient PromotedTweetsClient { get; }
-        public ISynchronousAnalyticsClient SynchronousAnalyticsClient { get; }
+        public ILineItemsClient LineItemsClient { get; }
+        public IAnalyticsClient AnalyticsClient { get; }
         public IMediaLibraryClient MediaLibraryClient { get; }
+        public ICustomAudiencesClient CustomAudiencesClient { get; }
 
         new public ITwitterExecutionContext CreateTwitterExecutionContext()
         {

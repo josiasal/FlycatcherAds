@@ -9,7 +9,7 @@ using FlycatcherAds.Core.Controllers;
 using FlycatcherAds.Models;
 using FlycatcherAds.Parameters;
 
-namespace FlycatcherAds.Controllers.AdsAccount
+namespace FlycatcherAds.Controllers
 {
     public class MediaLibraryController : IMediaLibraryController
     {

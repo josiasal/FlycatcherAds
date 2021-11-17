@@ -35,7 +35,7 @@ namespace FlycatcherAds.Controllers
             query.AddParameterToQuery("with_total_count", parameters.WithTotalCount);
 
             // GetCampaignsParameters
-            query.AddParameterToQuery("query", parameters.Query);
+            query.AddParameterToQuery("q", parameters.Query);
             query.AddParameterToQuery("with_draft", parameters.WithDraft);
             query.AddParameterToQuery("campaign_ids", parameters.CampaignIds);
             query.AddParameterToQuery("funding_instrument_ids", parameters.FundingInstrumentIds);

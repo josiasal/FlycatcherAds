@@ -21,13 +21,20 @@ namespace FlycatcherAds
             container.RegisterType<ICampaignsClient, CampaignsClient>();
             container.RegisterType<ICampaignsRequester, CampaignsRequester>();
 
+            container.RegisterType<ILineItemsClient, LineItemsClient>();
+            container.RegisterType<ILineItemsRequester, LineItemsRequester>();
+
             // Analytics
-            container.RegisterType<ISynchronousAnalyticsClient, SynchronousAnalyticsClient>();
-            container.RegisterType<ISynchronousAnalyticsRequester, SynchronousAnalyticsRequester>();
+            container.RegisterType<IAnalyticsClient, AnalyticsClient>();
+            container.RegisterType<IAnalyticsRequester, AnalyticsRequester>();
 
             // Creatives
             container.RegisterType<IMediaLibraryClient, MediaLibraryClient>();
             container.RegisterType<IMediaLibraryRequester, MediaLibraryRequester>();
+
+            // Audience
+            container.RegisterType<ICustomAudiencesClient, CustomAudiencesClient>();
+            container.RegisterType<ICustomAudiencesRequester, CustomAudiencesRequester>();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace FlycatcherAds.Controllers
             query.AddParameterToQuery("with_total_count", parameters.WithTotalCount);
 
             // GetAdsAccountsParameters
-            query.AddParameterToQuery("query", parameters.Query);
+            query.AddParameterToQuery("q", parameters.Query);
             query.AddParameterToQuery("ids", parameters.AccountIds);
         }
     }

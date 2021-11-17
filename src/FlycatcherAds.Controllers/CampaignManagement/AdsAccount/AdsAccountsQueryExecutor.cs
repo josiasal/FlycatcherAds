@@ -7,7 +7,6 @@ using FlycatcherAds.Models;
 using FlycatcherAds.Parameters;
 using FlycatcherAds.Core.QueryGenerators;
 
-
 namespace FlycatcherAds.Controllers
 {
     public interface IAdsAccountsQueryExecutor

@@ -9,7 +9,9 @@ namespace FlycatcherAds
         IAdsAccountsClient AdsAccountsClient { get; }
         ICampaignsClient CampaignsClient { get; }
         IPromotedTweetsClient PromotedTweetsClient { get; }
-        ISynchronousAnalyticsClient SynchronousAnalyticsClient { get; }
+        ILineItemsClient LineItemsClient { get; }
+        IAnalyticsClient AnalyticsClient { get; }
         IMediaLibraryClient MediaLibraryClient { get; }
+        ICustomAudiencesClient CustomAudiencesClient { get; }
     }
 }

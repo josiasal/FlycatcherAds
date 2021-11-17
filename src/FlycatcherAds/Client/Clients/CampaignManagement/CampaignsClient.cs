@@ -15,7 +15,7 @@ namespace FlycatcherAds.Client
         {
             _campaignsRequester = campaignsRequester;
         }
-        
+
         public ITwitterRequestIterator<CampaignsResponse, string> GetCampaignsIterator(IGetCampaignsParameters parameters)
         {
             var iterator = _campaignsRequester.GetCampaignsIterator(parameters);
