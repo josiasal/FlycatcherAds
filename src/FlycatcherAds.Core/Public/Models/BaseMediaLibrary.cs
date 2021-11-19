@@ -12,7 +12,7 @@ namespace FlycatcherAds.Models
         [JsonProperty("media_url")] public string MediaUrl { get; set; }
         [JsonProperty("created_at")] public DateTimeOffset CreatedAt { get; set; }
         [JsonProperty("media_status")] public string MediaStatus { get; set; }
-        [JsonProperty("media_type")] public string MediaType { get; set; }
+        [JsonProperty("media_type")] public MediaType MediaType { get; set; }
         [JsonProperty("updated_at")] public DateTimeOffset UpdatedAt { get; set; }
         [JsonProperty("deleted")] public bool Deleted { get; set; }
     }

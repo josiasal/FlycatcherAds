@@ -8,7 +8,7 @@ namespace FlycatcherAds.Models
         [JsonProperty("id")] public string Id { get; set; }
         [JsonProperty("start_time")] public DateTimeOffset StartTime { get; set; }
         [JsonProperty("end_time")] public DateTimeOffset EndTime { get; set; }
-        [JsonProperty("status")] public string Status { get; set; }
+        [JsonProperty("status")] public JobStatus Status { get; set; }
         [JsonProperty("segementation_type")] public SegmentationType SegementationType { get; set; }
         [JsonProperty("url")] public string Url { get; set; }
         [JsonProperty("entity_ids")] public string[] EntityIds { get; set; }

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+using FlycatcherAds.Models;
+
 namespace FlycatcherAds.Parameters
 {
     public interface IGetTweetsParameters
@@ -16,7 +18,7 @@ namespace FlycatcherAds.Parameters
         /// The Tweet type for the specified tweet_ids.
         /// Possible values: DRAFT, PUBLISHED, SCHEDULED
         /// </summary>
-        string TweetType { get; set; }
+        TweetType TweetType { get; set; }
         
         /// <summary>
         /// Specifies the number of records to try and retrieve per distinct request.
@@ -37,7 +39,7 @@ namespace FlycatcherAds.Parameters
         /// Whether to return nullcasted (a.k.a. "Promoted-only") Tweets, organic Tweets, or both.
         /// Possible values: ALL, NULLCAST, ORGANIC
         /// </summary>
-        string TimelineType { get; set; }
+        TimelineType TimelineType { get; set; }
 
         /// <summary>
         /// Whether to exclude the user object in the Tweet response. When enabled,
@@ -65,11 +67,11 @@ namespace FlycatcherAds.Parameters
         }
 
         public string AccountId { get; set; }
-        public string TweetType { get; set; }
+        public TweetType TweetType { get; set; }
         public int? Count { get; set; }
         public string Cursor { get; set; }
         public bool? IncludeMentionsAndReplies { get; set; }
-        public string TimelineType { get; set; }
+        public TimelineType TimelineType { get; set; }
         public bool? TrimUser { get; set; }
         public HashSet<long> TweetIds { get; set; }
         public long? UserId { get; set; }

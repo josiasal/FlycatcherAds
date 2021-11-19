@@ -54,7 +54,7 @@ namespace FlycatcherAds.Models
         [JsonProperty("nullcast")] public bool NullCast { get; set; }
         [JsonProperty("created_at")] public DateTimeOffset CreatedAt { get; set; }
         [JsonProperty("scheduled_at")] public DateTimeOffset ScheduledAt { get; set; }
-        [JsonProperty("tweet_type")] public string TweetType { get; set; }
+        [JsonProperty("tweet_type")] public TweetType TweetType { get; set; }
         [JsonProperty("favorited")] public bool Favorited { get; set; }
         [JsonProperty("full_text")] public string FullText { get; set; }
         [JsonProperty("lang")] public string Lang { get; set; }
