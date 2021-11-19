@@ -1,0 +1,56 @@
+{
+    "data_type": "stats",
+    "time_series_length": 31,
+    "data": [
+        {
+            "id": "801mig",
+            "id_data": []
+        },
+        {
+            "id": "801mij",
+            "id_data": []
+        },
+        {
+            "id": "7yd3gp",
+            "id_data": []
+        },
+        {
+            "id": "801mii",
+            "id_data": []
+        },
+        {
+            "id": "7x4l54",
+            "id_data": []
+        },
+        {
+            "id": "801mih",
+            "id_data": []
+        }
+    ],
+    "request": {
+        "params": {
+            "start_time": "2021-10-17T03:00:00Z",
+            "segmentation_type": "AGE",
+            "entity_ids": [
+                "7x4l54",
+                "7yd3gp",
+                "801mig",
+                "801mih",
+                "801mii",
+                "801mij"
+            ],
+            "end_time": "2021-11-17T03:00:00Z",
+            "country": null,
+            "placement": "ALL_ON_TWITTER",
+            "granularity": "DAY",
+            "entity": "PROMOTED_TWEET",
+            "platform": null,
+            "metric_groups": [
+                "BILLING",
+                "ENGAGEMENT",
+                "MEDIA",
+                "VIDEO"
+            ]
+        }
+    }
+}
